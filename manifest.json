@@ -21,10 +21,11 @@
 			],
 			"js": [
 				"jquery.js",
+				"migemo.js",
 				"common.js"
 			],
 			"css": [
-				"mystyle.css"
+				"style.css"
 			]
 		}
 	],
