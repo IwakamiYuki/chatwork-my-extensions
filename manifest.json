@@ -1,0 +1,42 @@
+{
+	"name": "chatwork-my-extensions",
+	"version": "2018.07.19",
+	"manifest_version": 2,
+	"description": "まいえくすてんしょん",
+	"icons": {
+		"16" : "images/icon.png",
+		"48" : "images/icon.png",
+		"128" : "images/icon.png"
+	},
+	"browser_action": {
+		"default_icon": "images/icon.png",
+		"default_title": "働きたくないね",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"js": [
+				"jquery.js",
+				"common.js"
+			],
+			"css": [
+				"mystyle.css"
+			]
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"<all_urls>",
+		"http://*/*",
+		"storage"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

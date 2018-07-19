@@ -1,0 +1,12 @@
+li.roomListItem {
+	height: 15px;
+	padding: 5px 28px 5px 5px;
+}
+.roomListItem .roomListItem__iconContainer {
+	width: 15px;
+	height: 15px;
+}
+.roomListItem  .avatarMedium {
+	width: 15px;
+	height: 15px;
+}
