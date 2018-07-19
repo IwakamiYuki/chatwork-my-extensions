@@ -21,7 +21,6 @@ var main = function() {
 		}
 	});
 
-
 	/**
 	* キーを押したときの処理
 	*/
@@ -59,8 +58,6 @@ var main = function() {
 			document.getElementsByClassName('roomListHeader')[1].children[0].blur();
 		}
 	};
-
-
 
 	///// エモーションの追加
 	// (gogo)
@@ -102,19 +99,6 @@ var addMyButton = function(){
 	span.onclick = selectedText2InfoText;
 	element = document.getElementById('_sendEnterActionArea')
 	element.parentNode.insertBefore(span, element);
-
-	///// エモーションの追加
-	// (gogo)
-	var addedEmotion = document.createElement('li').cloneNode(true)
-	addedEmotion. setAttribute('class', 'emoticonTooltip__emoticonContainer')
-	addedEmotion.innerHTML = '<img src="https://assets.chatwork.com/images/emoticon2x/emo_gogo.gif" alt="(gogo)" data-cwtag="(gogo)" title="いけいけ！" class="emoticonTooltip__emoticon">'
-	document.getElementById('_emoticonGallery').appendChild(addedEmotion)
-	// (ec14)
-	addedEmotion = document.createElement('li') .cloneNode(true)
-	addedEmotion. setAttribute('class', 'emoticonTooltip__emoticonContainer')
-	addedEmotion.innerHTML = '<img src="https://assets.chatwork.com/images/emoticon2x/emo_ceo.gif" alt="(ec14)" data-cwtag="(ec14)" title="EC14" class="emoticonTooltip__emoticon">'
-	document.getElementById('_emoticonGallery').appendChild(addedEmotion)
-
 }
 
 /**
@@ -158,7 +142,6 @@ var roomMoreButtonClick = function() {
 	document.getElementById('_roomMore').click()
 	if (document.getElementById('_roomMore')) setTimeout(roomMoreButtonClick,100);
 }
-
 
 
 var startCnt = 0;

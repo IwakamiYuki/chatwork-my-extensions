@@ -10,14 +10,13 @@
 	},
 	"browser_action": {
 		"default_icon": "images/icon.png",
-		"default_title": "働きたくないね",
-		"default_popup": "popup.html"
+		"default_title": "まいえくすてんしょん",
+		"name": "aaa"
 	},
 	"content_scripts": [
 		{
 			"matches": [
-				"http://*/*",
-				"https://*/*"
+				"https://kcw.kddi.ne.jp/*"
 			],
 			"js": [
 				"jquery.js",
