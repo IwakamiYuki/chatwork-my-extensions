@@ -139,7 +139,7 @@ var roomMoreButtonClickCount = 0;
 var roomMoreButtonClick = function() {
 	if (roomMoreButtonClickCount >= 2) return; // 開きすぎると重くなっちゃうので2回くらいで止めておく
 	roomMoreButtonClickCount++
-	document.getElementById('_roomMore').click()
+	$('.roomLimitOver div').click()
 	if (document.getElementById('_roomMore')) setTimeout(roomMoreButtonClick,100);
 }
 
