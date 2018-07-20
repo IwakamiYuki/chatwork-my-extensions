@@ -16,6 +16,7 @@
 	"content_scripts": [
 		{
 			"matches": [
+				"https://www.chatwork.com/*",
 				"https://kcw.kddi.ne.jp/*"
 			],
 			"js": [
