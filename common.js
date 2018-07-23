@@ -13,7 +13,7 @@ var main = function() {
 		for (var i = 0; i < memberList.length; i++) {
 			var member = memberList.eq(i);
 			var name = member.find('.roomListItem__roomName').text();
-			if(name.match(result)) {
+			if(name.toLowerCase().match(result)) {
 				member.show();
 			} else {
 				member.hide();
