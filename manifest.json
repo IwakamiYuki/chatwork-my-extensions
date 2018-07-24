@@ -1,17 +1,13 @@
 {
-	"name": "chatwork-my-extensions",
-	"version": "2018.07.23",
 	"manifest_version": 2,
+	"name": "chatwork-my-extensions",
+	"version": "2018.07.24",
 	"description": "まいえくすてんしょん",
+	"author": "IwakamiYuki",
 	"icons": {
-		"16" : "images/icon.png",
-		"48" : "images/icon.png",
-		"128" : "images/icon.png"
-	},
-	"browser_action": {
-		"default_icon": "images/icon.png",
-		"default_title": "まいえくすてんしょん",
-		"name": "aaa"
+		"16" : "images/icon16.png",
+		"48" : "images/icon48.png",
+		"128" : "images/icon128.png"
 	},
 	"content_scripts": [
 		{
@@ -30,14 +26,7 @@
 		}
 	],
 	"permissions": [
-		"activeTab",
-		"tabs",
-		"<all_urls>",
-		"http://*/*",
-		"storage"
 	],
 	"background": {
-		"scripts": ["background.js"]
-	},
-	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+	}
 }
