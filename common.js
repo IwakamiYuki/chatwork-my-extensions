@@ -6,17 +6,21 @@ var main = function() {
 	var roomListHeaderHtml = '<div class="roomListHeader mySearch"><input type="search" placeholder="グループ名で絞り込み...（ctrl+i）" style="width: 100%; border-top: none; border-right: none; border-bottom: 1px solid rgb(204, 204, 204); border-left: none; border-image: initial; box-shadow: none;"></div>'
 	$('#_sideContentMenu__header').after(roomListHeaderHtml)
 	$('.mySearch').keyup(function(e) {
-		var text = $('.mySearch input').val()
-
-		var result = MigemoJS.getRegExp (text);
+		var texts = $('.mySearch input').val().split(' ')
+		var result = new Array()
+		for (var i = 0; i < texts.length; i++) {
+			result[i] = MigemoJS.getRegExp (texts[i]);
+		}
 		var memberList = $('.roomListItem');
 		for (var i = 0; i < memberList.length; i++) {
 			var member = memberList.eq(i);
 			var name = member.find('.roomListItem__roomName').text();
-			if(name.toLowerCase().match(result)) {
-				member.show();
-			} else {
-				member.hide();
+			member.show();
+			for (var j = 0; j < texts.length; j++) {
+				if(!name.toLowerCase().match(result[j])) {
+					member.hide();
+					break;
+				}
 			}
 		}
 	});
