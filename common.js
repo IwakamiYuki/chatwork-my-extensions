@@ -47,6 +47,7 @@ var main = function() {
 		// ctrl + i でグループ名で絞り込み。入力後、Enterキーでその部屋を表示する。
 		if (e.ctrlKey && e.key=='i') {
 			document.getElementsByClassName('roomListHeader')[1].children[0].focus();
+			$('.roomListHeader input').css('background', 'pink')
 			isSearching = true;
 			roomMoreButtonClick();
 		}
@@ -60,6 +61,7 @@ var main = function() {
 				}
 			}
 			document.getElementsByClassName('roomListHeader')[1].children[0].blur();
+			$('.roomListHeader input').css('background', '')
 		}
 	};
 
