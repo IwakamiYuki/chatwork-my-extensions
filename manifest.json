@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "chatwork-my-extensions",
 	"version": "2018.07.29",
-	"description": "まいえくすてんしょん",
+	"description": "より効率よくチャットワークを扱うための拡張機能",
 	"author": "IwakamiYuki",
 	"icons": {
 		"16" : "images/icon16.png",
