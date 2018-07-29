@@ -83,7 +83,7 @@ var main = function() {
 var addMyButton = function(){
 	//  TO圧縮ボタンの設置
 	var span = document.createElement('span');
-	span.textContent = 'TOALL 圧縮(ctrl + ,)';
+	span.textContent = 'TOALL 圧縮(カンマ)';
 	span.className='to-asshuku button';
 	span.onclick = function() {
 		var e = document.getElementById('_chatText')
@@ -98,7 +98,7 @@ var addMyButton = function(){
 
 	// キレイにするやつ
 	span = document.createElement('span');
-	span.textContent = '[info](ctrl + .)';
+	span.textContent = '[info](ドット)';
 	span.className='to-asshuku button';
 	span.onclick = selectedText2InfoText;
 	element = document.getElementById('_sendEnterActionArea')
