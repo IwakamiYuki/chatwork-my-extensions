@@ -1,17 +1,20 @@
-li.roomListItem {
-	height: 25px;
-	padding: 5px 5px 5px 5px;
+roomlist div.roomList {
+	height: calc(100% - 41px - 41px);
 }
-.roomListItem .roomListItem__iconContainer {
+roomlist li.roomListItem {
+	height: 25px;
+	padding: 0px 0px 0px 0px;
+}
+roomlist .roomListItem .roomListItem__iconContainer {
 	width: 15px;
 	height: 15px;
 }
-.roomListItem  .avatarMedium {
+roomlist .roomListItem  .avatarMedium {
 	width: 15px;
 	height: 15px;
 }
 
-div.roomListItem__pinContainer {
+roomlist div.roomListItem__pinContainer {
 	top: 0px;
 	right: 0px;
 }
