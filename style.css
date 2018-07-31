@@ -1,4 +1,4 @@
-roomlist div.roomList {
+div.roomList {
 	height: calc(100% - 41px - 41px);
 }
 roomlist li.roomListItem {
