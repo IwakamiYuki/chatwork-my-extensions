@@ -53,7 +53,7 @@ var main = function() {
 		}
 		if (isSearching && e.key == 'Enter') {
 			isSearching = false;
-			var roomItemList = $('.roomListItem')
+			var roomItemList = $('.roomListItem:not(._roomLink)')
 			for (var i = 0; i < roomItemList.length; i++) {
 				if (roomItemList[i].style.length == 0) {
 					roomItemList[i].click();
